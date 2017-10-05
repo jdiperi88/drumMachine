@@ -1,24 +1,101 @@
 .container{
     display: flex;
-    position: relative;
-    left: 60%;
+    position: absolute;
+    left: 10vw;
     top: 13.7vh;
-    width: 24vw;
-    height: 50vh;
+    width: 80vw;
+    height: 100vh;
     justify-content: space-around;
 }
 
 body{
-    background: url("./images/drumMachineBackground.jpg");
+    background: url("./images/drumMachineBackground1.jpg");
     background-size: cover;
     min-height: 100vh;
     width: 100vw;
 }
 
-.key{
+/* .key{
     text-align: center;
     border: 10px solid black;
     height: 15vh;
     width: 9.4vw;
     padding-top: 2%;
-}
+    background: blue;
+} */
+.key{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:6px solid #26210A;
+    color: #000000;
+    border-radius: 15px 15px 15px 16px;
+    -webkit-border-radius: 15px 15px 15px 16px;
+    -moz-border-radius: 15px 15px 15px 16px;
+    font-family: Impact;
+    width: 6vw;
+    height: 6vh;
+    font-size: 20px;
+    padding: 40px 40px;
+    box-shadow: inset 0 1px 22px 0 #070208,inset 0 -1px 0 0 #E3C852,inset 0 0 0 1px #FCE88D,0 2px 4px 0 #D4D4D4;
+    -moz-box-shadow: inset 0 1px 22px 0 #070208,inset 0 -1px 0 0 #E3C852,inset 0 0 0 1px #FCE88D,0 2px 4px 0 #D4D4D4;
+    -webkit-box-shadow: inset 0 1px 22px 0 #070208,inset 0 -1px 0 0 #E3C852,inset 0 0 0 1px #FCE88D,0 2px 4px 0 #D4D4D4;
+    text-shadow: 0px 1px 25px #FFFFFF;
+    background-image: linear-gradient(to right, #E656FC, #9235FC);
+    background-color: #4494FC;
+   }
+   .key:hover, .key:active{
+    border:6px solid #967D09;
+    color: #705D07;
+    box-shadow: inset 0 1px 0 0 #FFF6CE,inset 0 -1px 0 0 #E3C852,inset 0 0 0 1px #FCE88D;
+    -moz-box-shadow: inset 0 1px 0 0 #FFF6CE,inset 0 -1px 0 0 #E3C852,inset 0 0 0 1px #FCE88D;
+    -webkit-box-shadow: inset 0 1px 0 0 #FFF6CE,inset 0 -1px 0 0 #E3C852,inset 0 0 0 1px #FCE88D;
+    background-color: #FCDF5B;
+   }
+
+   #s{
+    background-image: linear-gradient(to right, #32FC2B, #71FC4E);
+   }
+
+   #d{
+    background-image: linear-gradient(to right, #E8FC35, #C4C439);
+   }
+   #f{
+    background-image: linear-gradient(to right, #FC0000, #C44A4A);
+   }
+   #j{
+    background-image: linear-gradient(to right, #3A1CFC, #1247C4);
+   }
+   #k{
+    background-image: linear-gradient(to right, #60FCCD, #5AC0C4);
+   }
+   #l{
+    background-image: linear-gradient(to right, #FC1EDE, #BC70C4);
+   }
+   #semicolon{
+    background-image: linear-gradient(to right, #FCA1D2, #C4B6C3);
+   }
+   #z{
+    background-image: linear-gradient(to right, #FCA119, #C4821F);
+   }
+   #x{
+    background-image: linear-gradient(to right, #FC0000, #C44A4A);
+   }
+   #c{
+    background-image: linear-gradient(to right, #60FCCD, #5AC0C4);
+   }
+   #v{
+    background-image: linear-gradient(to right, #3A1CFC, #1247C4);
+   }
+   #m{
+    background-image: linear-gradient(to right, #FC1EDE, #BC70C4);
+   }
+   #comma{
+    background-image: linear-gradient(to right, #32FC2B, #71FC4E);
+   }
+   #period{
+    background-image: linear-gradient(to right, #E8FC35, #C4C439);
+   }
+   #questionMark{
+    background-image: linear-gradient(to right, #6336B3, #6D3BC4);
+   }
