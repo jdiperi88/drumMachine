@@ -11,7 +11,7 @@ window.addEventListener('keydown',function(event){
     key.classList.add('playing');
 });
 
-window.addEventListener('click',function(event){
+window.addEventListener('mousedown',function(event){
     console.log(event.target.id);
     const audio = document.querySelector(`#${event.target.id}Audio`)
     // const audio = document.querySelector(`#s`).innerHTML
