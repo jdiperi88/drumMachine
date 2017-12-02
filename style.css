@@ -58,6 +58,7 @@ body{
     text-shadow: 0px 1px 25px #FFFFFF;
     background-image: linear-gradient(to right, #E656FC, #9235FC);
     background-color: #4494FC;
+    transition: all 1s;
    }
    .key:hover, .key:active{
     border:6px solid #FFFFFF;
@@ -67,7 +68,12 @@ body{
     -webkit-box-shadow: inset 0px 1px 0 0 #823CAB,inset 0 -1px 0 0 #E3C852,inset 0 0 0 1px #FCE88D;
     background-color: #FCDF5B;
    }
-
+   .key:hover {
+       transform: translateY(-10px);
+   }
+   .key:active {
+    transform: translateY(-2px);
+    }
    #s{
     background-image: linear-gradient(to right, #32FC2B, #71FC4E);
    }
